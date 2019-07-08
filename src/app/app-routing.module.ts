@@ -7,14 +7,12 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  {
-    path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
-  },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  }
+  { path: 'home', loadChildren: './home/home.module#HomePageModule' },
+  { path: 'equipes', loadChildren: './pages/equipes/equipes.module#EquipesPageModule' },
+  { path: 'funcionarios', loadChildren: './pages/funcionarios/funcionarios.module#FuncionariosPageModule' },
+  { path: 'ferias', loadChildren: './pages/ferias/ferias.module#FeriasPageModule' },
+  { path: 'signin', loadChildren: './pages/signin/signin.module#SigninPageModule' },
+  { path: 'endereco', loadChildren: './pages/endereco/endereco.module#EnderecoPageModule' }
 ];
 
 @NgModule({
